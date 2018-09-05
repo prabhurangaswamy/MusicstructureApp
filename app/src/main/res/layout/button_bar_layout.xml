@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/artist"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/button_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/button_artist"
+        android:text="@string/album"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/button_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_artist"
+        android:text="@string/genre"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/button_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_artist"
+        android:layout_toRightOf="@id/button_genre"
+        android:text="@string/playlist"
+        android:textColor="@color/colorAccent"/>
+</RelativeLayout>
